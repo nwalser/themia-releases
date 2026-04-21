@@ -1,0 +1,87 @@
+name: Bug report
+description: Report a bug in Themia
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug. The more detail you give, the faster it can be fixed.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: A clear description of what went wrong.
+      placeholder: The folder widget freezes when I drag a large file onto it.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: The exact steps that trigger the bug. Numbered lists work well.
+      placeholder: |
+        1. Open Themia
+        2. Add a folder widget pointing to C:\Users\...
+        3. Drag a 2 GB file onto it
+        4. The widget stops responding
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+      placeholder: The file should start copying with a progress indicator.
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Themia version
+      description: Open Settings → About to find your version number.
+      placeholder: v0.10.0
+    validations:
+      required: true
+
+  - type: dropdown
+    id: windows
+    attributes:
+      label: Windows version
+      options:
+        - Windows 11
+        - Windows 10
+        - Other / not sure
+    validations:
+      required: true
+
+  - type: input
+    id: hardware
+    attributes:
+      label: Hardware (optional)
+      description: Only relevant for bugs that might depend on CPU/GPU (performance issues, system widgets, GPU monitor, etc.).
+      placeholder: e.g. Intel i7-12700K, RTX 4070, 32 GB RAM
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots (optional)
+      description: Attach screenshots, videos, or paste relevant log lines. Logs are at `%APPDATA%\Themia\logs`.
+      placeholder: Drop files here, or paste text.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and didn't find a duplicate.
+          required: true
+        - label: I'm on the latest version of Themia (or the bug is present on the latest).
+          required: true
