@@ -1,0 +1,67 @@
+name: Widget request
+description: Suggest a new widget for Themia
+title: "[Widget] "
+labels: ["widget-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a widget! The more specific you are about what the widget should do and what it should connect to, the better the chance it ships.
+
+  - type: input
+    id: widget-name
+    attributes:
+      label: Widget name
+      description: A short name for the widget (e.g. "Spotify", "Jira tickets", "Google Calendar").
+      placeholder: e.g. Google Calendar
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-it-shows
+    attributes:
+      label: What should the widget show?
+      description: Describe what the widget displays and how it behaves. Mock-ups, screenshots, or links to similar widgets are welcome.
+      placeholder: |
+        - A month grid of upcoming events from my Google Calendar
+        - Today's events highlighted, with time and title
+        - Click an event to open it in the browser
+    validations:
+      required: true
+
+  - type: input
+    id: service
+    attributes:
+      label: What service or data source does it connect to?
+      description: If the widget pulls data from somewhere (an account, an API, a local file), name it here. Write "Local" if it's offline-only.
+      placeholder: e.g. Google Calendar (OAuth), or Local
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why would this widget be useful?
+      description: What problem does it solve for you? Who else would use it?
+      placeholder: I keep switching to my browser to check my next meeting — having it on my desktop would save me a dozen context switches a day.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: How important is this for you?
+      options:
+        - Nice to have
+        - Would use it often
+        - Would change whether I keep using Themia
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and didn't find a duplicate request.
+          required: true
