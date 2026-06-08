@@ -16,12 +16,10 @@
 
 ## Widgets
 
-<table width="100%">
-<tr><td width="170"><b>System</b></td><td>CPU · RAM · GPU · Disk · Network · Battery</td></tr>
-<tr><td><b>Productivity</b></td><td>Email · Calendar · Contacts · Todo · Notes · Folder</td></tr>
-<tr><td><b>Information</b></td><td>Weather · Forecast · Stocks · GitHub · RSS</td></tr>
-<tr><td><b>Utilities</b></td><td>Clock · Music · Color Picker</td></tr>
-</table>
+- **System** — CPU · RAM · GPU · Disk · Network · Battery
+- **Productivity** — Email · Calendar · Contacts · Todo · Notes · Folder
+- **Information** — Weather · Forecast · Stocks · GitHub · RSS
+- **Utilities** — Clock · Music · Color Picker
 
 ## Why Themia
 
@@ -34,10 +32,8 @@
 
 Get the latest installer from the [**Releases**](https://github.com/nwalser/themia-releases/releases/latest) page. Windows 10 & 11.
 
-| Plan | Price | What you get |
-|---|---|---|
-| **Free** | $0 | Up to 10 widgets on 2 screens |
-| **Pro** | $19 once | Unlimited widgets & screens, every widget type, up to 5 devices |
+- **Free** — up to 10 widgets on 2 screens
+- **Pro ($19, one-time)** — unlimited widgets & screens, every widget type, up to 5 devices
 
 ---
 
