@@ -25,16 +25,10 @@
 
 ## Why Themia
 
-<table width="100%">
-<tr>
-<td width="50%"><b>Lightweight</b><br>Under 10 MB, barely touches your RAM</td>
-<td width="50%"><b>Fully customizable</b><br>Colors, gaps, corners, transparency</td>
-</tr>
-<tr>
-<td><b>Multiple screens</b><br>Context layouts for home, work, school</td>
-<td><b>Feels native</b><br>Drag & drop, shortcuts, right-click menus</td>
-</tr>
-</table>
+- **Lightweight** — under 10 MB, barely touches your RAM
+- **Fully customizable** — colors, gaps, corners, transparency
+- **Multiple screens** — context layouts for home, work, school
+- **Feels native** — drag & drop, global shortcuts, right-click menus
 
 ## Download
 
