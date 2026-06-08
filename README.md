@@ -1,16 +1,10 @@
-<div align="center">
-
 # Themia
 
 **Beautiful, transparent widgets for your Windows desktop.**
 
-<a href="https://github.com/nwalser/themia-releases/releases/latest"><img src="https://img.shields.io/badge/Download_for_Windows-60cdff?style=for-the-badge&logo=windows&logoColor=white" alt="Download for Windows" /></a>
-
 [Website](https://themia.app) · [Download](https://github.com/nwalser/themia-releases/releases/latest) · [Changelog](https://themia.app/changelog) · [Report a bug](https://github.com/nwalser/themia-releases/issues)
 
 <img src=".github/assets/hero.png" alt="Themia widgets on a Windows desktop" width="900" />
-
-</div>
 
 ---
 
