@@ -29,6 +29,20 @@ Get the latest installer from the [**Releases**](https://github.com/nwalser/them
 - **Free**: up to 10 widgets on 2 screens
 - **Pro ($19, one-time)**: unlimited widgets & screens, every widget type, up to 5 devices
 
+## Project status
+
+Actively developed — these badges update live from GitHub.
+
+<div align="center">
+
+[![version](https://img.shields.io/github/v/release/nwalser/themia-releases?style=flat&labelColor=1e1e1e&color=60cdff&label=version)](https://github.com/nwalser/themia-releases/releases/latest)
+[![released](https://img.shields.io/github/release-date/nwalser/themia-releases?style=flat&labelColor=1e1e1e&color=60cdff&label=released)](https://github.com/nwalser/themia-releases/releases/latest)
+[![downloads](https://img.shields.io/github/downloads/nwalser/themia-releases/total?style=flat&labelColor=1e1e1e&color=60cdff&label=downloads)](https://github.com/nwalser/themia-releases/releases)
+[![stars](https://img.shields.io/github/stars/nwalser/themia-releases?style=flat&labelColor=1e1e1e&color=60cdff)](https://github.com/nwalser/themia-releases/stargazers)
+[![open issues](https://img.shields.io/github/issues/nwalser/themia-releases?style=flat&labelColor=1e1e1e&color=60cdff&label=open%20issues)](https://github.com/nwalser/themia-releases/issues)
+
+</div>
+
 ---
 
 <div align="center">
