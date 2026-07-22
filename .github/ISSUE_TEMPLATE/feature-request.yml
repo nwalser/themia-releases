@@ -5,7 +5,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Want a brand-new widget that connects to a service? Use the **New widget** form instead.
+        Thank you for taking the time to suggest this, and for helping make Themia better!
 
   - type: input
     id: area

@@ -2,6 +2,11 @@ name: New widget
 description: Suggest a brand-new widget for Themia
 labels: ["widget-request"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to suggest this, and for helping make Themia better!
+
   - type: input
     id: widget-name
     attributes:
