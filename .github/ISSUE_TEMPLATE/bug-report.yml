@@ -3,18 +3,10 @@ description: Something in Themia is broken or behaving unexpectedly
 title: "[Bug] "
 labels: ["bug"]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to report a bug! The more detail you give, the faster it can be fixed.
-
-        If your bug is about a **system monitor**, a **connected account** (email / calendar), or shows up on a **multi-monitor setup**, please fill in the matching section further down — those are the details most bugs get stuck without.
-
   - type: dropdown
     id: area
     attributes:
       label: Which widget or area?
-      description: What part of Themia is the bug in? Pick the closest match.
       options:
         - System monitor (CPU / GPU / RAM / Disk / Network)
         - Calendar
@@ -38,41 +30,13 @@ body:
       required: true
 
   - type: textarea
-    id: summary
+    id: what
     attributes:
-      label: What happened?
-      description: A clear description of what went wrong.
-      placeholder: The CPU widget never shows the temperature, even after I enable it.
-    validations:
-      required: true
-
-  - type: textarea
-    id: steps
-    attributes:
-      label: Steps to reproduce
-      description: The exact steps that trigger the bug. Numbered lists work well.
+      label: What's wrong?
+      description: What happens, and what did you expect instead? Steps to reproduce help a lot.
       placeholder: |
-        1. Open Themia
-        2. Add a CPU widget
-        3. Enable "CPU temperature" in its settings
-        4. No temperature ever appears
-    validations:
-      required: true
-
-  - type: textarea
-    id: expected
-    attributes:
-      label: What did you expect to happen?
-      placeholder: The temperature should appear right after I enable it.
-    validations:
-      required: true
-
-  - type: input
-    id: version
-    attributes:
-      label: Themia version
-      description: Open Settings → About to find your version number.
-      placeholder: v0.14.0
+        The CPU widget never shows the temperature, even after I enable it.
+        I expected it to appear right after turning it on.
     validations:
       required: true
 
@@ -87,55 +51,22 @@ body:
     validations:
       required: true
 
-  - type: textarea
-    id: system-details
+  - type: input
+    id: version
     attributes:
-      label: System monitor bugs — hardware & metric
-      description: |
-        **Fill this in for any CPU / GPU / RAM / Disk / Network / temperature / fan bug.** These bugs almost always depend on your exact hardware and sensors.
-        Tell us: the CPU and GPU model, which metric is wrong (e.g. "CPU temperature", "GPU utilisation", "disk I/O"), and what it shows vs. what a tool like Task Manager / HWiNFO shows.
-      placeholder: |
-        - CPU: AMD Ryzen 7 8845HS
-        - GPU: NVIDIA RTX 4050
-        - Motherboard (for fan/temp bugs): ASRock B550M Steel Legend
-        - Wrong metric: CPU temperature — shows nothing; HWiNFO reads 55°C
+      label: Themia version
+      description: Settings -> About shows your version.
+      placeholder: v0.14.0
     validations:
-      required: false
+      required: true
 
   - type: textarea
-    id: monitor-setup
+    id: extra
     attributes:
-      label: Multi-monitor bugs — display setup
+      label: Anything else? (optional)
       description: |
-        **Fill this in for anything about scaling, Win+D, disappearing widgets, per-monitor behaviour, or the desktop right-click / icons.**
-        List each monitor: resolution, scaling %, which is primary, and which monitor the problem is on.
-      placeholder: |
-        - Monitor 1: 3840x2160 @ 150% (primary, gaming)
-        - Monitor 2: 1920x1080 @ 100% (portrait, widget lives here)
-        - Bug happens on: Monitor 2
-    validations:
-      required: false
-
-  - type: textarea
-    id: connection-details
-    attributes:
-      label: Connection / account bugs — provider details
-      description: |
-        **Fill this in for email, calendar, contacts, or any "connection" / login bug.** The same protocol behaves differently per provider.
-        Tell us the provider (e.g. Gmail, Outlook, iCloud, Nextcloud, Fastmail) and the connection type (IMAP, CalDAV, Microsoft, Google, Claude Code). Do **not** paste passwords or tokens.
-      placeholder: |
-        - Provider: Fastmail
-        - Connection type: IMAP
-        - It said "connected" but the widget shows "No messages"
-    validations:
-      required: false
-
-  - type: textarea
-    id: logs
-    attributes:
-      label: Logs, screenshots or video (optional)
-      description: Attach screenshots/video, or paste relevant log lines. Logs are at `%APPDATA%\Themia\logs`.
-      placeholder: Drop files here, or paste text.
+        Screenshots or a short video help most. Drop them right here.
+        If it's relevant, add: your hardware (system monitor bugs), your monitor setup and scaling (Win+D / scaling / disappearing widgets), or the provider (Gmail, Outlook, Nextcloud, IMAP, CalDAV) for email / calendar bugs. Logs live at %APPDATA%\Themia\logs.
     validations:
       required: false
 
@@ -144,7 +75,5 @@ body:
     attributes:
       label: Before submitting
       options:
-        - label: I searched existing issues and didn't find a duplicate.
-          required: true
-        - label: I'm on the latest version of Themia (or the bug is present on the latest).
+        - label: I'm on the latest version, and I searched for a duplicate.
           required: true

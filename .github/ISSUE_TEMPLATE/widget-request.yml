@@ -6,15 +6,12 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for suggesting a widget! This form is for a **new** widget type.
-
-        Want to improve a widget that already exists, or an app setting (fonts, scaling, start day…)? Use the **Feature or improvement** form instead — it'll get to the right place faster.
+        Improving a widget that already exists, or an app setting? Use the **Feature or improvement** form instead.
 
   - type: input
     id: widget-name
     attributes:
       label: Widget name
-      description: A short name for the widget.
       placeholder: e.g. Spotify, Jira tickets, Google Calendar
     validations:
       required: true
@@ -23,45 +20,21 @@ body:
     id: what-it-shows
     attributes:
       label: What should the widget show?
-      description: Describe what it displays and how it behaves. Mock-ups, screenshots, or links to similar widgets are welcome.
+      description: What it displays and how it behaves. Mock-ups or links to similar widgets welcome.
       placeholder: |
-        - A month grid of upcoming events from my calendar
-        - Today's events highlighted, with time and title
-        - Click an event to open it in the browser
+        A list of my next calendar events, with time and title.
+        Click an event to open it in the browser.
     validations:
       required: true
 
   - type: input
     id: service
     attributes:
-      label: What service or data source does it connect to?
-      description: Name the account, API, or file it pulls from. Write "Local" if it's fully offline.
-      placeholder: e.g. Spotify (OAuth), Jira REST API, or Local
+      label: What does it connect to?
+      description: The account, API, or file it pulls from. Write "Local" if it's fully offline.
+      placeholder: e.g. Spotify, Jira, or Local
     validations:
       required: true
-
-  - type: dropdown
-    id: auth
-    attributes:
-      label: How would you sign in / connect it? (if you know)
-      description: Rough idea only — it helps gauge how feasible the integration is.
-      options:
-        - Not sure
-        - Log in with an account (OAuth / sign-in)
-        - API key or token I paste in
-        - A URL or feed address
-        - No sign-in needed (local / offline)
-    validations:
-      required: false
-
-  - type: textarea
-    id: why
-    attributes:
-      label: Why would this widget be useful?
-      description: What problem does it solve for you? Who else would use it?
-      placeholder: I keep switching to my browser to check my next meeting — having it on my desktop would save a dozen context switches a day.
-    validations:
-      required: false
 
   - type: dropdown
     id: priority

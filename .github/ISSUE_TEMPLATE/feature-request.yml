@@ -1,20 +1,17 @@
 name: Feature or improvement
-description: Suggest an improvement to an existing widget or to the app itself
+description: Improve an existing widget or the app itself
 title: "[Feature] "
 labels: ["enhancement"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for the suggestion! This form is for improving something that already exists — a widget, a setting, or app-wide behaviour.
-
-        Want a brand-new widget that connects to a service (Spotify, Jira, Google Calendar…)? Use the **New widget** form instead.
+        Want a brand-new widget that connects to a service? Use the **New widget** form instead.
 
   - type: dropdown
     id: area
     attributes:
       label: Which widget or area?
-      description: What part of Themia would this change?
       options:
         - System monitor (CPU / GPU / RAM / Disk / Network)
         - Calendar
@@ -41,29 +38,10 @@ body:
     id: proposal
     attributes:
       label: What would you like to change or add?
-      description: Describe the improvement. Mock-ups, screenshots, or examples from other apps are welcome.
-      placeholder: |
-        Add a toggle to the calendar widget for the start day of the week (Sunday vs Monday).
+      description: What should it do, and how does it fall short today? Mock-ups or screenshots welcome.
+      placeholder: Add a toggle to the calendar widget for the start day of the week (Sunday vs Monday). Right now it always starts on Monday.
     validations:
       required: true
-
-  - type: textarea
-    id: current
-    attributes:
-      label: How does it work today?
-      description: What's the current behaviour, and why does it fall short for you?
-      placeholder: The calendar always starts the week on Monday. I'm used to a Sunday–Saturday layout, so events look shifted from where I expect them.
-    validations:
-      required: false
-
-  - type: textarea
-    id: why
-    attributes:
-      label: Why would this help?
-      description: What problem does it solve? Who else would benefit?
-      placeholder: A lot of users (especially in the US) prefer a Sunday start and get thrown off by the current layout.
-    validations:
-      required: false
 
   - type: dropdown
     id: priority
