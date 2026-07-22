@@ -3,29 +3,12 @@ description: Something in Themia is broken or behaving unexpectedly
 title: "[Bug] "
 labels: ["bug"]
 body:
-  - type: dropdown
+  - type: input
     id: area
     attributes:
-      label: Which widget or area?
-      options:
-        - System monitor (CPU / GPU / RAM / Disk / Network)
-        - Calendar
-        - Email
-        - Contacts
-        - Folder / file explorer
-        - Shortcuts / app launcher
-        - Weather / forecast
-        - RSS feed
-        - GitHub
-        - To-do list
-        - Clock
-        - Media / now playing
-        - Unit converter / calculator
-        - Claude / Claude Code
-        - Appearance / theming / scaling
-        - Startup / tray / window behaviour
-        - Whole app / not sure
-        - Other
+      label: Which widget?
+      description: Name the widget this is about, or write "whole app" if it affects Themia in general.
+      placeholder: e.g. CPU monitor, Calendar, Email, or whole app
     validations:
       required: true
 
@@ -37,6 +20,17 @@ body:
       placeholder: |
         The CPU widget never shows the temperature, even after I enable it.
         I expected it to appear right after turning it on.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: monitors
+    attributes:
+      label: Monitor setup
+      description: Some bugs only show up with more than one screen.
+      options:
+        - Single monitor
+        - Multiple monitors
     validations:
       required: true
 
@@ -66,7 +60,7 @@ body:
       label: Anything else? (optional)
       description: |
         Screenshots or a short video help most. Drop them right here.
-        If it's relevant, add: your hardware (system monitor bugs), your monitor setup and scaling (Win+D / scaling / disappearing widgets), or the provider (Gmail, Outlook, Nextcloud, IMAP, CalDAV) for email / calendar bugs. Logs live at %APPDATA%\Themia\logs.
+        If it's relevant, add: your hardware (system monitor bugs), your monitor resolutions and scaling (Win+D / scaling / disappearing widgets), or the provider (Gmail, Outlook, Nextcloud, IMAP, CalDAV) for email / calendar bugs. Logs live at %APPDATA%\Themia\logs.
     validations:
       required: false
 

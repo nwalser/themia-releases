@@ -8,29 +8,12 @@ body:
       value: |
         Want a brand-new widget that connects to a service? Use the **New widget** form instead.
 
-  - type: dropdown
+  - type: input
     id: area
     attributes:
       label: Which widget or area?
-      options:
-        - System monitor (CPU / GPU / RAM / Disk / Network)
-        - Calendar
-        - Email
-        - Contacts
-        - Folder / file explorer
-        - Shortcuts / app launcher
-        - Weather / forecast
-        - RSS feed
-        - GitHub
-        - To-do list
-        - Clock
-        - Media / now playing
-        - Unit converter / calculator
-        - Appearance / theming / scaling
-        - Startup / tray / window behaviour
-        - Layout / views / multi-monitor
-        - Whole app / general
-        - Other
+      description: Name the widget this is about, or write "whole app" if it's an app-wide setting or behaviour.
+      placeholder: e.g. Calendar, Folder, appearance, or whole app
     validations:
       required: true
 
