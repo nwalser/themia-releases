@@ -2,11 +2,6 @@ name: New widget
 description: Suggest a brand-new widget for Themia
 labels: ["widget-request"]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Improving a widget that already exists, or an app setting? Use the **Feature or improvement** form instead.
-
   - type: input
     id: widget-name
     attributes:
@@ -19,7 +14,6 @@ body:
     id: what-it-shows
     attributes:
       label: What should the widget show?
-      description: What it displays and how it behaves. Mock-ups or links to similar widgets welcome.
       placeholder: |
         A list of my next calendar events, with time and title.
         Click an event to open it in the browser.
