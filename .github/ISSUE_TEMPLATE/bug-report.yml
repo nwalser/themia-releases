@@ -3,11 +3,15 @@ description: Something in Themia is broken or behaving unexpectedly
 title: "[Bug] "
 labels: ["bug"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to report this, and for helping make Themia better!
+
   - type: input
     id: area
     attributes:
       label: Which widget?
-      description: Name the widget this is about, or write "whole app" if it affects Themia in general.
       placeholder: e.g. CPU monitor, Calendar, Email, or whole app
     validations:
       required: true
@@ -16,7 +20,6 @@ body:
     id: what
     attributes:
       label: What's wrong?
-      description: What happens, and what did you expect instead? Steps to reproduce help a lot.
       placeholder: |
         The CPU widget never shows the temperature, even after I enable it.
         I expected it to appear right after turning it on.
@@ -46,9 +49,7 @@ body:
     id: extra
     attributes:
       label: Anything else? (optional)
-      description: |
-        Screenshots or a short video help most. Drop them right here.
-        If it's relevant, add: your hardware (system monitor bugs), your monitor resolutions and scaling (Win+D / scaling / disappearing widgets), or the provider (Gmail, Outlook, Nextcloud, IMAP, CalDAV) for email / calendar bugs. Logs live at %APPDATA%\Themia\logs.
+      placeholder: Screenshots or a video, your hardware, your email / calendar provider, logs at %APPDATA%\Themia\logs
     validations:
       required: false
 
