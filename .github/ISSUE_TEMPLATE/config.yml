@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question or help
+    url: https://themia.app
+    about: Not a bug or a request? Check the website and docs first — most "how do I…" questions are answered there.
+  - name: Email the developer
+    url: mailto:themia@nathaniel-walser.com
+    about: For account, billing, or anything you'd rather not post publicly.
