@@ -69,5 +69,9 @@ body:
     attributes:
       label: Before submitting
       options:
-        - label: I'm on the latest version, and I searched for a duplicate.
+        - label: I'm on the latest version of Themia, or the bug is still present on the latest.
+          required: true
+        - label: I searched existing issues and didn't find a duplicate.
+          required: true
+        - label: I understand this issue is public, and I've left out any passwords, tokens, or private information.
           required: true

@@ -54,3 +54,5 @@ body:
       options:
         - label: I searched existing issues and didn't find a duplicate request.
           required: true
+        - label: I understand this issue is public, and I've left out any private information.
+          required: true
