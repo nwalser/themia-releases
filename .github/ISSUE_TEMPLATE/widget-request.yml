@@ -1,6 +1,5 @@
 name: New widget
 description: Suggest a brand-new widget for Themia
-title: "[Widget] "
 labels: ["widget-request"]
 body:
   - type: markdown

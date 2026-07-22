@@ -1,6 +1,5 @@
 name: Feature or improvement
 description: Improve an existing widget or the app itself
-title: "[Feature] "
 labels: ["enhancement"]
 body:
   - type: markdown
