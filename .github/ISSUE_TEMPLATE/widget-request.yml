@@ -26,15 +26,6 @@ body:
     validations:
       required: true
 
-  - type: input
-    id: service
-    attributes:
-      label: What does it connect to?
-      description: The account, API, or file it pulls from. Write "Local" if it's fully offline.
-      placeholder: e.g. Spotify, Jira, or Local
-    validations:
-      required: true
-
   - type: dropdown
     id: priority
     attributes:
