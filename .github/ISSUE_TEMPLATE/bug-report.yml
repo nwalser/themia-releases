@@ -49,7 +49,6 @@ body:
     id: version
     attributes:
       label: Themia version
-      description: Settings -> About shows your version.
       placeholder: v0.14.0
     validations:
       required: true
