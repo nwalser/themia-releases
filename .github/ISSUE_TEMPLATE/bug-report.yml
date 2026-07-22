@@ -24,17 +24,6 @@ body:
       required: true
 
   - type: dropdown
-    id: monitors
-    attributes:
-      label: Monitor setup
-      description: Some bugs only show up with more than one screen.
-      options:
-        - Single monitor
-        - Multiple monitors
-    validations:
-      required: true
-
-  - type: dropdown
     id: windows
     attributes:
       label: Windows version
