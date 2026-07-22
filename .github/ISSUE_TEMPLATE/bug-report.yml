@@ -45,14 +45,6 @@ body:
     validations:
       required: true
 
-  - type: textarea
-    id: extra
-    attributes:
-      label: Anything else? (optional)
-      placeholder: Screenshots or a video, your hardware, your email / calendar provider, logs at %APPDATA%\Themia\logs
-    validations:
-      required: false
-
   - type: checkboxes
     id: checks
     attributes:
